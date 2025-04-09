@@ -2,6 +2,9 @@
 
 A standalone command-line WhatsApp client that allows sending messages from the terminal without requiring Go installation on the target machine.
 
+
+This is a simple client for the WhatsApp Web API using the [whatsmeow](https://github.com/tulir/whatsmeow) library.
+
 ## Overview
 
 This package contains two main components:
