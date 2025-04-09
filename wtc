@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# wtc - WhatsApp Terminal Client
+# A simple wrapper script for the WhatsApp client
+
+# Get the directory where this script is located
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Check if we have enough arguments
+if [ $# -lt 2 ]; then
+    echo "Usage: ./wtc <phone_number> <message>"
+    echo "Example: ./wtc 1234567890 'Hello, world!'"
+    exit 1
+fi
+
+# Run the WhatsApp client with the provided arguments
+"$SCRIPT_DIR/whatsapp_client" "$@"
